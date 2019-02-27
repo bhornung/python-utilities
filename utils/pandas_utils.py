@@ -1,20 +1,7 @@
-import json
-
 import numpy as np
 import pandas as pd
 
-def load_from_json(path_to_db):
-    """
-    Loads the contents of a json file.
-    Parameters:
-        path_to_db (str) : full path to a json file.
-    Returns:
-        data_ (object) : the loaded object.
-    """
-    with open(path_to_db, 'r') as fproc:
-        data_ = json.load(fproc)
-            
-    return data_
+
 	
 def calculate_rolling_mean_std(df_, win_size, 
                                pad_size = None, 
